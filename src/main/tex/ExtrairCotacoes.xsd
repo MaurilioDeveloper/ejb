@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="CALCULOS" type="CALCULOSType"/>
+  <xs:complexType name="CASCOType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="LMIKITGAS"/>
+      <xs:element type="xs:string" name="FATORFIPE"/>
+      <xs:element type="xs:string" name="COBERVIDROS"/>
+      <xs:element type="xs:string" name="DESPEXTRAS"/>
+      <xs:element type="xs:string" name="ISBLINDAGEM"/>
+      <xs:element type="xs:string" name="MESESVLRZEROKM"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RCFType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="ISDANOSMATERIA"/>
+      <xs:element type="xs:string" name="ISDANOSCORPO"/>
+      <xs:element type="xs:string" name="ISDANOSMORAIS"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="APPType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="ISMORTE"/>
+      <xs:element type="xs:string" name="ISINVALIDEZ"/>
+      <xs:element type="xs:string" name="LMIDESPMEDHOSP"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="COBERTURASType">
+    <xs:sequence>
+      <xs:element type="CASCOType" name="CASCO"/>
+      <xs:element type="RCFType" name="RCF"/>
+      <xs:element type="APPType" name="APP"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SEGURADOType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="NOMESEG"/>
+      <xs:element type="xs:string" name="PESSOASEG"/>
+      <xs:element type="xs:string" name="CGCSEG"/>
+      <xs:element type="xs:string" name="NASCSEG"/>
+      <xs:element type="xs:string" name="SEXOSEG"/>
+      <xs:element type="xs:string" name="ESTCIVILSEG"/>
+      <xs:element type="xs:string" name="EMAILPES"/>
+      <xs:element type="xs:string" name="DDDRES"/>
+      <xs:element type="xs:string" name="TELRES"/>
+      <xs:element type="xs:string" name="DDDCEL"/>
+      <xs:element type="xs:string" name="CEL"/>
+      <xs:element type="xs:string" name="RELAPROPR"/>
+      <xs:element type="xs:string" name="FILHOATE17"/>
+      <xs:element type="xs:string" name="MAISVEICS"/>
+      <xs:element type="xs:string" name="ORIGEM"/>
+      <xs:element type="xs:string" name="ATIV-SEG"/>
+      <xs:element type="xs:string" name="RAMO-SEG"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PROPRIETARIOType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="NOMEPROP"/>
+      <xs:element type="xs:string" name="PESSOAPROP"/>
+      <xs:element type="xs:string" name="CGCPROP"/>
+      <xs:element type="xs:string" name="SEXOPROP"/>
+      <xs:element type="xs:string" name="ESTCIVILPROP"/>
+      <xs:element type="xs:string" name="NASCPROP"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CONDS17A25Type">
+    <xs:sequence>
+      <xs:element type="xs:string" name="EXISTE17A25"/>
+      <xs:element type="xs:string" name="RESIDENTE17A25"/>
+      <xs:element type="xs:string" name="SEXO17A25"/>
+      <xs:element type="xs:string" name="RELACONDP"/>
+      <xs:element type="xs:string" name="POSSUEMVEIC"/>
+      <xs:element type="xs:string" name="MAIORTEM17"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CJHORAESTUDAType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="CJHE"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CJESPORTESType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="CJE"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CONDJOVEMType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="CJFILHOS"/>
+      <xs:element type="xs:string" name="CJTRABALHA"/>
+      <xs:element type="xs:string" name="CJHORATRAB"/>
+      <xs:element type="xs:string" name="CJESCOLARIDADE"/>
+      <xs:element type="CJHORAESTUDAType" name="CJHORAESTUDA"/>
+      <xs:element type="xs:string" name="CJRESIDECOM"/>
+      <xs:element type="CJESPORTESType" name="CJESPORTES"/>
+      <xs:element type="xs:string" name="CJDIVERNOITE"/>
+      <xs:element type="xs:string" name="CJDIRDEF"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PERFILCOMType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="CONDSEG"/>
+      <xs:element type="xs:string" name="PARTSINIST"/>
+      <xs:element type="xs:string" name="EMPDIRDEF"/>
+      <xs:element type="xs:string" name="COBERSP"/>
+      <xs:element type="xs:string" name="PERIODOUSO"/>
+      <xs:element type="xs:string" name="TRANSPORTEDE"/>
+      <xs:element type="xs:string" name="UTILIZA-22H15"/>
+      <xs:element type="xs:string" name="QUITADO"/>
+      <xs:element type="xs:string" name="LOGOTIPO"/>
+      <xs:element type="xs:string" name="GERENC-RISCO"/>
+      <xs:element type="xs:string" name="DESCCARGA"/>
+      <xs:element type="xs:string" name="VEICPERNOITE"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PERFILMOTOType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="PMFILHOS"/>
+      <xs:element type="xs:string" name="PMCLUBE"/>
+      <xs:element type="xs:string" name="PMNOMECLUBE"/>
+      <xs:element type="xs:string" name="PMTRABALHA"/>
+      <xs:element type="xs:string" name="UTILIZA-SEMANA"/>
+      <xs:element type="xs:string" name="PMUTILIZA"/>
+      <xs:element type="xs:string" name="PMDIAS"/>
+      <xs:element type="xs:string" name="PMOUTROVEIC"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CONDUTORPType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="RELASEG"/>
+      <xs:element type="xs:string" name="CPFCOND"/>
+      <xs:element type="xs:string" name="NOMECOND"/>
+      <xs:element type="xs:string" name="SEXOCOND"/>
+      <xs:element type="xs:string" name="NASCCOND"/>
+      <xs:element type="xs:string" name="ESTCIVILCOND"/>
+      <xs:element type="xs:string" name="TEMPOHABILITA"/>
+      <xs:element type="xs:string" name="PROFIS"/>
+      <xs:element type="xs:string" name="RAMO-COND"/>
+      <xs:element type="xs:string" name="RESIDEEM"/>
+      <xs:element type="xs:string" name="CONDCONSID"/>
+      <xs:element type="xs:string" name="TOTALVEICS"/>
+      <xs:element type="xs:string" name="VITIMA"/>
+      <xs:element type="xs:string" name="MESMOCONDANT"/>
+      <xs:element type="xs:string" name="CONDSACIMA25"/>
+      <xs:element type="CONDS17A25Type" name="CONDS17A25"/>
+      <xs:element type="CONDJOVEMType" name="CONDJOVEM"/>
+      <xs:element type="PERFILCOMType" name="PERFILCOM"/>
+      <xs:element type="PERFILMOTOType" name="PERFILMOTO"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LCCONDType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="LCNOME"/>
+      <xs:element type="xs:string" name="LCIDADE"/>
+      <xs:element type="xs:string" name="LCSEXO"/>
+      <xs:element type="xs:string" name="LCESTCIVIL"/>
+      <xs:element type="xs:string" name="LCDIASDIRIGE"/>
+      <xs:element type="xs:string" name="LCDIASDIRIGEMOTO"/>
+      <xs:element type="xs:string" name="LCHABILITADOHA"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LISTCONDSType">
+    <xs:sequence>
+      <xs:element type="LCCONDType" name="LCCOND"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PERFILUSOVEICType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="USO"/>
+      <xs:element type="xs:string" name="KMMEDIAMENSAL"/>
+      <xs:element type="xs:string" name="PERNOITEGARAG"/>
+      <xs:element type="xs:string" name="GARAGRESID"/>
+      <xs:element type="xs:string" name="GARAGESCOLA"/>
+      <xs:element type="xs:string" name="GARAGTRAB"/>
+      <xs:element type="xs:string" name="DISTTRAB"/>
+      <xs:element type="xs:string" name="RESIDTRAMUN"/>
+      <xs:element type="xs:string" name="USOEXTRAB"/>
+      <xs:element type="xs:string" name="PERIODOGUARDA"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VEICULOType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="CODCAR"/>
+      <xs:element type="xs:string" name="CATEG"/>
+      <xs:element type="xs:string" name="MARCA"/>
+      <xs:element type="xs:string" name="ANOFABR"/>
+      <xs:element type="xs:string" name="ANOMODELO"/>
+      <xs:element type="xs:string" name="ZEROKM"/>
+      <xs:element type="xs:string" name="UTILIZACAO"/>
+      <xs:element type="xs:string" name="CILINDRADAS"/>
+      <xs:element type="PERFILUSOVEICType" name="PERFILUSOVEIC"/>
+      <xs:element type="xs:string" name="CEPPERNOITE"/>
+      <xs:element type="xs:string" name="CEPCIRC"/>
+      <xs:element type="xs:string" name="CEPRESID"/>
+      <xs:element type="xs:string" name="PLACANUM"/>
+      <xs:element type="xs:string" name="PLACAUF"/>
+      <xs:element type="xs:string" name="ADQUICONCESS"/>
+      <xs:element type="xs:string" name="DTCONCESSIO"/>
+      <xs:element type="xs:string" name="VALNTFISCAL"/>
+      <xs:element type="xs:string" name="UFNTFISCAL"/>
+      <xs:element type="xs:string" name="CHASSI"/>
+      <xs:element type="xs:string" name="COMBUSTIVEL"/>
+      <xs:element type="xs:string" name="CAMBIOAUTO"/>
+      <xs:element type="xs:string" name="CAMBIOSEMI"/>
+      <xs:element type="xs:string" name="ABS"/>
+      <xs:element type="xs:string" name="ARCOND"/>
+      <xs:element type="xs:string" name="ARCONDDIGI"/>
+      <xs:element type="xs:string" name="DH"/>
+      <xs:element type="xs:string" name="AIRBAGMOTO"/>
+      <xs:element type="xs:string" name="AIRBAGPASS"/>
+      <xs:element type="xs:string" name="BANCOCOURO"/>
+      <xs:element type="xs:string" name="TE"/>
+      <xs:element type="xs:string" name="VE"/>
+      <xs:element type="xs:string" name="TETO"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="COTACAOType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="NOVOTOKEN"/>
+      <xs:element type="xs:string" name="USUARIO"/>
+      <xs:element type="xs:string" name="CALCN"/>
+      <xs:element type="xs:string" name="CALCIT"/>
+      <xs:element type="xs:string" name="STATUS"/>
+      <xs:element type="xs:string" name="INCLUSAO-DATAHORA"/>
+      <xs:element type="xs:string" name="AGENDAMENTO-DATAHORA"/>
+      <xs:element type="xs:string" name="SCORE"/>
+      <xs:element type="xs:string" name="AGENDAMENTO"/>
+      <xs:element type="xs:string" name="CODIGO-EV"/>
+      <xs:element type="xs:string" name="INIVIG"/>
+      <xs:element type="xs:string" name="FIMVIG"/>
+      <xs:element type="xs:string" name="TIPOSEG"/>
+      <xs:element type="xs:string" name="FRANQUIA1"/>
+      <xs:element type="xs:string" name="FRANQUIA2"/>
+      <xs:element type="COBERTURASType" name="COBERTURAS"/>
+      <xs:element type="xs:string" name="ASSISTENCIA24H"/>
+      <xs:element type="xs:string" name="CARRORESERVA"/>
+      <xs:element type="SEGURADOType" name="SEGURADO"/>
+      <xs:element type="PROPRIETARIOType" name="PROPRIETARIO"/>
+      <xs:element type="CONDUTORPType" name="CONDUTORP"/>
+      <xs:element type="LISTCONDSType" name="LISTCONDS"/>
+      <xs:element type="VEICULOType" name="VEICULO"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CALCULOSType">
+    <xs:sequence>
+      <xs:element type="COTACAOType" name="COTACAO" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+Built-By: mvsilva9
+Build-Jdk: 1.8.0_121
+Class-Path: financiamento-santander-service-1.0.0.jar slf4j-api-1.7.9.
+ jar log4j-api-2.6.jar log4j-core-2.6.jar log4j-slf4j-impl-2.6.jar com
+ mons-lang-2.3.jar commons-codec-1.5.jar omega2-entity-2.0.0-SNAPSHOT.
+ jar spring-data-mongodb-1.10.3.RELEASE.jar spring-tx-4.3.8.RELEASE.ja
+ r spring-context-4.3.8.RELEASE.jar spring-aop-4.3.8.RELEASE.jar sprin
+ g-beans-4.3.8.RELEASE.jar spring-core-4.3.8.RELEASE.jar spring-expres
+ sion-4.3.8.RELEASE.jar spring-data-commons-1.13.3.RELEASE.jar mongo-j
+ ava-driver-2.14.3.jar jcl-over-slf4j-1.7.24.jar omega2-common-2.0.0-S
+ NAPSHOT.jar omega2-tex-service-2.0.0-SNAPSHOT.jar axis2-jaxws-1.7.6.j
+ ar geronimo-annotation_1.0_spec-1.1.jar geronimo-jaxws_2.2_spec-1.0.j
+ ar axis2-saaj-1.7.6.jar geronimo-saaj_1.3_spec-1.0.1.jar axiom-dom-1.
+ 2.20.jar axis2-metadata-1.7.6.jar geronimo-javamail_1.4_spec-1.6.jar 
+ xml-resolver-1.2.jar jaxb-impl-2.2.6.jar jaxb-xjc-2.2.6.jar xalan-2.7
+ .0.jar aws-java-sdk-core-1.11.140.jar commons-logging-1.1.3.jar httpc
+ lient-4.5.2.jar httpcore-4.4.4.jar ion-java-1.0.2.jar jackson-databin
+ d-2.6.6.jar jackson-annotations-2.6.0.jar jackson-core-2.6.6.jar jack
+ son-dataformat-cbor-2.6.6.jar joda-time-2.8.1.jar aws-java-sdk-s3-1.1
+ 1.140.jar aws-java-sdk-kms-1.11.140.jar jmespath-java-1.11.140.jar ax
+ is2-kernel-1.7.6.jar axiom-api-1.2.20.jar geronimo-activation_1.1_spe
+ c-1.1.jar jaxen-1.1.6.jar geronimo-stax-api_1.0_spec-1.0.1.jar apache
+ -mime4j-core-0.7.2.jar axiom-impl-1.2.20.jar woodstox-core-asl-4.2.0.
+ jar stax2-api-3.1.1.jar geronimo-ws-metadata_2.0_spec-1.1.2.jar geron
+ imo-jta_1.1_spec-1.1.jar servlet-api-2.3.jar commons-fileupload-1.3.3
+ .jar wsdl4j-1.6.2.jar xmlschema-core-2.2.1.jar neethi-3.0.3.jar woden
+ -core-1.0M10.jar jsr311-api-1.1.1.jar commons-io-2.1.jar axis2-xmlbea
+ ns-1.7.6.jar axis2-codegen-1.7.6.jar axis2-adb-1.7.6.jar jaxws-tools-
+ 2.2.6.jar xmlbeans-2.5.0.jar ant-1.7.0.jar ant-launcher-1.7.0.jar axi
+ s2-transport-local-1.7.6.jar axis2-transport-http-1.7.6.jar commons-h
+ ttpclient-3.1.jar xsd-gen-0.2.1.jar wiztools-commons-lib-0.4.1.jar xo
+ m-1.2.5.jar cli-7.jar jaxb-api-2.1.jar stax-api-1.0-2.jar activation-
+ 1.1.jar
+Created-By: Maven Integration for Eclipse
+
